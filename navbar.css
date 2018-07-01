@@ -1,0 +1,29 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: var(--header-height);
+    background-color: var(--main-bg-color);
+    color: white;
+    display: grid;
+    grid-template-columns: 10% 30% 20% 30% 10%;
+    align-items: center;
+    z-index: 2;
+}
+
+.navName {
+    grid-column-start: 2;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.navButtons {
+    grid-column-start: 4;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navButton {
+    cursor: pointer;
+}

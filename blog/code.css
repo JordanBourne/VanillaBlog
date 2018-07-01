@@ -1,0 +1,37 @@
+pre {
+    counter-reset: line;
+    white-space: pre-line;
+    /* Optional Styling */
+    border-left: 4px solid var(--main-bg-color);
+    background-color: rgba(0,0,0,.1);
+    width: fit-content;
+    padding: 10px;
+    line-height: 1.4em;
+}
+
+code {
+    counter-increment: line;
+    white-space: pre;
+}
+
+code:before {
+    content: counter(line);
+    -webkit-user-select: none;
+    /* Optional Styling */
+    display: inline-block;
+    border-right: 1px solid rgba(0,0,0,.3);
+    padding: 0 .5em;
+    margin-right: .5em;
+}
+
+.codeElementName {
+    color: red;
+}
+
+.codeAttributeType {
+    color: orange;
+}
+
+.codeAttributeValue {
+    color: green;
+}

@@ -1,0 +1,29 @@
+:root {
+  --main-bg-color: #0f3168;
+  --second-bg-color: #3465b5;
+  /* --second-bg-color: #487bce; */
+  --header-height: 65px;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.basicLink {
+    color: white;
+    text-decoration: none;
+}
+
+.basicLink:hover {
+    text-decoration: none;
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

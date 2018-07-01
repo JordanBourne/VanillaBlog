@@ -1,0 +1,74 @@
+.bodyContainer {
+    position: absolute;
+    top: 100vh;
+    background-color: white;
+    width: 100%;
+    z-index: 2;
+}
+
+.bodyContent {
+    margin: -10vh auto 10vh auto;
+    background-color: white;
+    width: 90vw;
+    max-width: 1200px;
+    box-shadow: 0 20px 50px 0 rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyTitle {
+    margin: auto;
+    margin-top: 10vh;
+    height: 10vh;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,.4);
+}
+
+.blogpost {
+    margin: 5% 10% 0% 10%;
+}
+
+.blogpost:last-child {
+    margin-bottom: 10%;
+}
+
+.blogTitle {
+    border-left: 2px solid var(--second-bg-color);
+    padding-left: 20px;
+}
+
+.blogTitleText {
+    font-size: 3em;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.blogDetails {
+    font-size: .95em;
+    font-weight: normal;
+}
+
+.blogPreview {
+    margin: 3% 0 1.5% 0;
+    padding-left: 20px;
+}
+
+.blogButton {
+    border: 2px solid var(--main-bg-color);
+    background-color: var(--main-bg-color);
+    color: white;
+    cursor: pointer;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    margin-left: 20px;
+}
+
+.blogButton:hover {
+    box-shadow: 0px 5px 5px 0 rgba(0,0,0,.3);
+}

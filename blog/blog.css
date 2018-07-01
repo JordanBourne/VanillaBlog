@@ -1,0 +1,91 @@
+.blogSplashBackground {
+    background: linear-gradient(to bottom, var(--main-bg-color) 40%, var(--second-bg-color));
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 30vh;
+    width: 100vw;
+    z-index: 1;
+}
+
+.blogContainer {
+    position: absolute;
+    top: 30vh;
+    background-color: white;
+    width: 100%;
+    z-index: 2;
+    color: hsla(0, 0%, 17%, 1);
+}
+
+.blogBody {
+    margin: -10vh auto 10vh auto;
+    background-color: white;
+    width: 90vw;
+    max-width: 1200px;
+    box-shadow: 0 20px 50px 0 rgba(0,0,0,.3);
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.blogContent {
+    margin: 10vh 0 10vh 6vw;
+    padding-right: 1.5vw;
+    border-right: 1px solid rgba(0,0,0,.3);
+}
+
+.blogNav {
+    padding: 10vh 6vw 10vh 1.5vw;
+    height: 100%;
+}
+
+.blogNav a {
+    text-decoration: none;
+}
+
+.blogAuthor {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.blogAuthorImage {
+    width: 100%;
+}
+
+.blogAuthorSubTitle {
+    padding-top: 10px;
+    color: hsla(0, 0%, 10%, .6);
+}
+
+.blogAuthorName {
+    margin: 0px;
+    color: hsla(0, 0%, 10%, 1);
+}
+
+.blogTitle {
+    font-size: 3.5em;
+    margin: 0px;
+}
+
+.recentPosts {
+    text-align: center;
+    border-bottom: 1px solid hsla(0, 0%, 10%, .6);
+    width: 80%;
+    padding-bottom: 5px;
+    margin: auto;
+}
+
+.blogSubTitle {
+    font-size: .95em;
+    color: hsla(0, 0%, 10%, .6);
+}
+
+.blogText {
+    font-size: 1.15em;
+    line-height: 1.4;
+}
+
+.blogText a {
+    color: hsla(0, 0%, 17%, 1);
+}

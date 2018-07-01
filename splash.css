@@ -1,0 +1,45 @@
+.splash {
+    background: linear-gradient(to bottom, var(--main-bg-color) 20%, var(--second-bg-color));
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1;
+}
+
+.splashCard {
+    text-align: center;
+}
+
+.splashTitle {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.splashButton {
+    border: 2px solid white;
+    transition: all .2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.splashButton:hover {
+    background-color: white;
+    color: var(--main-bg-color);
+}
+
+#splashButtonOne {
+    margin-right: 30px;
+}
