@@ -1,0 +1,132 @@
+<html>
+	<head>
+		<title>Jordan Bourne</title>
+	</head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../index.css">
+    <link rel="stylesheet" type="text/css" href="../../navbar.css">
+    <link rel="stylesheet" type="text/css" href="./../blog.css">
+    <link rel="stylesheet" type="text/css" href="./../code.css">
+	<body>
+        <div class="navbar">
+            <div class="navName">
+                <a href="../../index.html" class="basicLink">Jordan Bourne</a>
+            </div>
+            <div class="navButtons">
+                <div class="navButton" id="buttonOne">
+                    <a href="../../index.html" class="basicLink">Home</a>
+                </div>
+                <!-- <div class="navButton" id="buttonTwo">
+                    <a href="../topPosts/topPosts.html" class="basicLink">Top Posts</a>
+                </div>
+                <div class="navButton" id="buttonThree">
+                    <a href="../browse/browse.html" class="basicLink">Browse</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="blogSplashBackground"></div>
+        <div class="blogContainer">
+            <div class="blogBody">
+                <div class="blogContent">
+                    <h1 class="blogTitle">
+                        The Makings of a Minimum Viable Product
+                    </h1>
+                    <h2 class="blogSubTitle">
+                        <span class="blogAuthor">
+                            By Jordan Bourne
+                        </span>
+                        <span class="blogDate">
+                            / 2018-07-21
+                        </span>
+                    </h2>
+                    <div class="blogText">
+                        <p>
+                            It should go without saying that one of the most important aspects of developing software is the ability to deliver a product. It can be easy to forget this sometimes and get so caught up trying to create the perfect product or trying to write the most beautiful code that suddenly months have gone by and there's nothing to show for it. This is something I can fall victim to regularly, so my <a href="http://www.ClimbingTiming.com">Climbing Timing</a> project has been an exercise of delivery for me.
+                        </p>
+                        <h3>What is a Minimum Viable Product (MVP), and why should we care?</h3>
+                        <p>
+                            The name is a strong hint already, but to describe it entirely: A MVP is a version of the product that has only base requirements fulfilled to be useable and accomplish the tasks it was set out to do.
+                        </p>
+                        <p>
+                            This can be useful for several reasons:
+                            <ul>
+                                <li>
+                                    Quickly determine the proof of concept or viability of a product
+                                </li>
+                                <li>
+                                    The customers can start using it and providing feedback more quickly
+                                </li>
+                                <li>
+                                    Provides a more precise direction of which to focus efforts
+                                </li>
+                            </ul>
+                        </p>
+                        <p>
+                            Note that just because you're trying to deliver a product quickly, you shouldn't be cutting too many corners and sacrificing the quality of your code. It doesn't need to be the essence of perfection, but it does need to be easy to iterate on.
+                        </p>
+                        <h3>My Project - Climbing Timing</h3>
+                        <p>
+                            The most popular way to train finger strength for rock climbing outside of just climbing is to do something called Hangboarding. This just means findind a small edge of usually 8-20mm, and hanging from it for a few seconds, resting a few minutes, and then repeating. This seemed like a simple enough task to make a web app for, and since I couldn't find one in my searchings, I decided to make one for myself.
+                        </p>
+                        <p>
+                            The first step then is to lay out everything I would like the app to do:
+                            <ul>
+                                <li>Show how long to hang and rest for</li>
+                                <li>All the normal functions of a timer (start, stop, pause, reset)</li>
+                                <li>Choose between different training programs</li>
+                                <li>Support for creating a custom training program</li>
+                                <li>More detailed programs that include specific grip types or edge size</li>
+                                <li>Offline support for training in the backcountry</li>
+                                <li>Create an account to track progress</li>
+                            </ul>
+                        </p>
+                        <p>
+                            Now this isn't a huge list of items, but I'm making this in the little spare time I have and I would like it done as soon as possible for my own use. That means paring down the list of the things I would like to have to just what is necessary for it to be useful. For that, I really only need to have the timer <strong>display the time intervals</strong> and <strong>be able to start and stop it</strong>. Also since I'm relatively new to training this way, I will also include the ability to <strong>choose between different training programs</strong>.
+                        </p>
+                        <p>
+                            With these three goals defined, it's time to start development. <a href="./startingDevelopment.html">Read about my development process here.</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="blogNav">
+                    <a href="../../about/about.html">
+                        <div class="blogAuthor">
+                            <img src="../../images/me.jpg" class="blogAuthorImage" alt="author"/>
+                                <div class="blogAuthorSubTitle">About / Contact</div>
+                            <h3 class="blogAuthorName">JORDAN BOURNE</h3>
+                        </div>
+                    </a>
+                    <div class="recentPosts">Recent Posts</div>
+                    <h3 class="postTitle">
+                        <p>
+                            <a href="./startingDevelopment.html">
+                                Writing the First Lines of Code (MVP Part 2)
+                            </a>
+                        </p>
+                        <p>
+                            <a href="./theBeginnings.html">
+                                The Makings of a Minimum Viable Product
+                            </a>
+                        </p>
+                        <p>
+                            <a href="../templates/templatesIntroduction.html">
+                                Introduction to the HTML5 Template Element
+                            </a>
+                        </p>
+                    </h3>
+                </div>
+            </div>
+            <div class="footer">
+                Jordan Bourne
+            </div>
+        </div>
+
+        <template id="testTemplate">
+            <div class="testDiv">
+                Hello World
+            </div>
+        </template>
+
+        <script src="../code.js"></script>
+	</body>
+</html>

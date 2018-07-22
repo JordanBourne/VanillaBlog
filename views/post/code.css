@@ -4,14 +4,16 @@ pre {
     /* Optional Styling */
     border-left: 4px solid var(--main-bg-color);
     background-color: rgba(0,0,0,.1);
-    width: fit-content;
+    /* width: fit-content;
+    max-width: 96%; */
     padding: 10px;
     line-height: 1.4em;
+    overflow-x: auto;
 }
 
 code {
     counter-increment: line;
-    white-space: pre;
+    white-space: pre-wrap;
 }
 
 code:before {
@@ -25,13 +27,25 @@ code:before {
 }
 
 .codeElementName {
-    color: red;
-}
-
-.codeAttributeType {
-    color: orange;
+    color: #ad4545;
 }
 
 .codeAttributeValue {
-    color: green;
+    color: #a97143;
+}
+
+.codeString {
+    color: #51ad45;
+}
+
+.codeKeyword {
+    color: #8345ad;
+}
+
+.codeFunction {
+    color: #448faa;
+}
+
+.codeObject {
+    color: #ad4545;
 }

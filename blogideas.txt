@@ -1,7 +1,0 @@
-HTML templates basics
-Re-useable content (recent posts example)
-Building a single page application
-
-Building a Virtual DOM
-
-Posting code to blog

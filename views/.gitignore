@@ -1,0 +1,7 @@
+/node_modules/*
+.DS_Store
+*.log
+*/*.log
+public/global/fontawesome/*
+public/global/fa-regular.min.css
+public/global/fontawesome-all.min.css

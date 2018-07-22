@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title>Jordan Bourne</title>
+	</head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../index.css">
+    <link rel="stylesheet" type="text/css" href="../navbar.css">
+    <link rel="stylesheet" type="text/css" href="../post/blog.css">
+	<body>
+        <div class="navbar">
+            <div class="navName">
+                <a href="/" class="basicLink">Jordan Bourne</a>
+            </div>
+            <div class="navButtons">
+                <div class="navButton" id="buttonOne">
+                    <a href="/" class="basicLink">Home</a>
+                </div>
+            </div>
+        </div>
+        <div class="blogSplashBackground"></div>
+        <div class="blogContainer">
+            <div class="blogBody">
+                <div class="blogContent">
+                    <h1 class="blogTitle">
+                        About Me
+                    </h1>
+                    <div class="blogText">
+                        <p>
+                            I have a terrible habit of trying to do everything myself. Recently, this has been in the form of abanoning the JavaScript frameworks and libraries, and trying to kick it with just Vanilla. It's not just me being stubborn though - having a solid grasp on how the everything works before you start adding anything else makes adding new skills much easier and makes you appreciate them more.
+                        </p>
+                        <p>
+                            I am a software engineer currently living in Detroit, MI working for RocketLoans. When I'm away from the computer, I am spending most of my time climbing, hiking, or dancing poorly at a music show.
+                        </p>
+                        <p>
+                            Want to contact me? The best way to reach me is via email at JordanBourne@ymail.com
+                        </p>
+                    </div>
+                </div>
+                <div class="blogNav">
+                    <a href="/about">
+                        <div class="blogAuthor">
+                            <img src="../images/me.jpg" class="blogAuthorImage" alt="author"/>
+                                <div class="blogAuthorSubTitle">About / Contact</div>
+                            <h3 class="blogAuthorName">JORDAN BOURNE</h3>
+                        </div>
+                    </a>
+                    <div class="recentPosts">Recent Posts</div>
+                    <h3 class="postTitle">
+                        <p>
+                            <a href="/post/<| recentPosts[0].link |>">
+                                <| recentPosts[0].title |>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="/post/<| recentPosts[1].link |>">
+                                <| recentPosts[1].title |>
+                            </a>
+                        </p>
+                    </h3>
+                </div>
+            </div>
+            <div class="footer">
+                Jordan Bourne
+            </div>
+        </div>
+
+        <script src="../code.js"></script>
+        <script src="./templatesIntroduction.js"></script>
+	</body>
+</html>

@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Vanilla Developer</title>
+		<title>Jordan Bourne</title>
 	</head>
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../index.css">
@@ -10,17 +10,11 @@
 	<body>
         <div class="navbar">
             <div class="navName">
-                <a href="../index.html" class="basicLink">Vanilla Developer</a>
+                <a href="/" class="basicLink">Jordan Bourne</a>
             </div>
             <div class="navButtons">
                 <div class="navButton" id="buttonOne">
-                    <a href="../index.html" class="basicLink">Home</a>
-                </div>
-                <div class="navButton" id="buttonTwo">
-                    <a href="../topPosts/topPosts.html" class="basicLink">Top Posts</a>
-                </div>
-                <div class="navButton" id="buttonThree">
-                    <a href="../browse/browse.html" class="basicLink">Browse</a>
+                    <a href="/" class="basicLink">Home</a>
                 </div>
             </div>
         </div>
@@ -29,45 +23,51 @@
             <div class="blogBody">
                 <div class="blogContent">
                     <h1 class="blogTitle">
-                        Introduction to the HTML5 Template Element
+                        <| blogPost.title |>
                     </h1>
                     <h2 class="blogSubTitle">
                         <span class="blogAuthor">
-                            By Jordan Bourne
+                            By <| blogPost.author |>
                         </span>
                         <span class="blogDate">
-                            / 2018-06-28
+                            / <| blogPost.date |>
                         </span>
                     </h2>
                     <div class="blogText">
-                        <p>
-                            Using HTML5 Templates is fun!
-                        </p>
-                        <pre>
-                            <code>&lt;template id="testTemplate"&gt;</code>
-                            <code>  Testing 123</code>
-                            <code>&lt;/template&gt;</code>
-                        </pre>
+                        <| blogPost.body |>
                     </div>
                 </div>
                 <div class="blogNav">
-                    <a href="../about/about.html">
+                    <a href="/about">
                         <div class="blogAuthor">
-                            <img src="../images/me.jpg" class="blogAuthorImage" alt="author"/>
+                            <img src="../../images/me.jpg" class="blogAuthorImage" alt="author"/>
                                 <div class="blogAuthorSubTitle">About / Contact</div>
-                            <h3 class="blogAuthorName">JORDAN BOURNE</h3>
+                            <h3 class="blogAuthorName"><| blogPost.author |></h3>
                         </div>
                     </a>
                     <div class="recentPosts">Recent Posts</div>
-                    <h3 class="postTitle">Why Use Vanilla Javascript</h3>
-                    <h3 class="postTitle">What is Vanilla Javascript</h3>
+                    <h3 class="postTitle">
+                        <p>
+                            <a href="/post/<| recentPosts[0].link |>">
+                                <| recentPosts[0].title |>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="/post/<| recentPosts[1].link |>">
+                                <| recentPosts[1].title |>
+                            </a>
+                        </p>
+                    </h3>
                 </div>
             </div>
             <div class="footer">
-                Vanilla Developer
+                Jordan Bourne
             </div>
         </div>
 
-        <script src="./code.js"></script>
+        <| templates[0] |>
+
+        <script src="../post/code.js"></script>
+        <script src="../post/templates/templatesIntroduction.js"></script>
 	</body>
 </html>

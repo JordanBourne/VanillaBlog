@@ -42,6 +42,7 @@
 
 .blogNav a {
     text-decoration: none;
+    color: hsla(0, 0%, 17%, 1);
 }
 
 .blogAuthor {
@@ -76,6 +77,10 @@
     margin: auto;
 }
 
+.blogRecentPost:visited {
+    color: 1px solid hsla(0, 0%, 10%, .6);
+}
+
 .blogSubTitle {
     font-size: .95em;
     color: hsla(0, 0%, 10%, .6);
@@ -88,4 +93,10 @@
 
 .blogText a {
     color: hsla(0, 0%, 17%, 1);
+}
+
+.blogFooter {
+    font-style: italic;
+    font-size: .8em;
+    color: hsla(0, 0%, 10%, .75);
 }

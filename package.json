@@ -1,0 +1,33 @@
+{
+  "name": "vanillablog",
+  "version": "0.1.0",
+  "description": "Open source blogging platform build on nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JordanBourne/VanillaBlog.git"
+  },
+  "keywords": [
+    "nodejs",
+    "blog",
+    "platform"
+  ],
+  "author": "Jordan Bourne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JordanBourne/VanillaBlog/issues"
+  },
+  "homepage": "https://github.com/JordanBourne/VanillaBlog#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "jbt-express": "^0.1.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "sinon": "^6.1.4"
+  }
+}

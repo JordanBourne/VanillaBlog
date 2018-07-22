@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<title>Jordan Bourne</title>
+	</head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="stylesheet" type="text/css" href="./navbar.css">
+    <link rel="stylesheet" type="text/css" href="./splash.css">
+    <link rel="stylesheet" type="text/css" href="./homeBody.css">
+	<body>
+        <div class="navbar">
+            <div class="navName">
+                <a href="/" class="basicLink">Jordan Bourne</a>
+            </div>
+        </div>
+        <div class="splash">
+            <div class="splashCard">
+                <div class="splashTitle">
+                    KEEPING THINGS SIMPLE
+                </div>
+                <br />
+                <span class="splashSubtitle">
+                    A blog about developing with Vanilla Javascript
+                </span>
+            </div>
+        </div>It should go without saying that one of the most important aspects of developing software is the ability to deliver a product. It can be easy to forget this sometimes and get so caught up trying to create the perfect product or trying to write the most beautiful code that suddenly months have gone by and there's nothing to show for it. This is something I can fall victim to regularly, so my <a href="http://www.ClimbingTiming.com">Climbing Timing</a> project has been an exercise of delivery for me.
+        <div class="bodyContainer">
+            <div class="bodyContent">
+                <div class="bodyTitle">
+                    Recent Posts
+                </div>
+                <div class="blogpost">
+                    <div class="blogTitle">
+                        <h2 class="blogTitleText"><| blog.post[0].title |></h2>
+                        <h3 class="blogDetails">
+                            <span class="blogAuthor">
+                                By <| blog.post[0].author |>
+                            </span>
+                            <span class="blogDate">
+                                on <| blog.post[0].date |>
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="blogPreview">
+                        <| blog.post[0].preview |>
+                    </div>
+                    <a href="./post/<| blog.post[0].link |>" class="basicLink">
+                        <div class="blogButton">
+                            Keep Reading
+                        </div>
+                    </a>
+                </div>
+                <div class="blogpost">
+                    <div class="blogTitle">
+                        <h2 class="blogTitleText"><| blog.post[1].title |></h2>
+                        <h3 class="blogDetails">
+                            <span class="blogAuthor">
+                                By <| blog.post[1].author |>
+                            </span>
+                            <span class="blogDate">
+                                on <| blog.post[1].date |>
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="blogPreview">
+                        <| blog.post[1].preview |>
+                    </div>
+                    <a href="./post/<| blog.post[1].link |>" class="basicLink">
+                        <div class="blogButton">
+                            Keep Reading
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footerTitle">
+                    Jordan Bourne
+                </div>
+            </div>
+        </div>
+	</body>
+</html>

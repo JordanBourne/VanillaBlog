@@ -1,0 +1,147 @@
+<html>
+	<head>
+		<title>Jordan Bourne</title>
+	</head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../index.css">
+    <link rel="stylesheet" type="text/css" href="../../navbar.css">
+    <link rel="stylesheet" type="text/css" href="./../blog.css">
+    <link rel="stylesheet" type="text/css" href="./../code.css">
+	<body>
+        <div class="navbar">
+            <div class="navName">
+                <a href="../../index.html" class="basicLink">Jordan Bourne</a>
+            </div>
+            <div class="navButtons">
+                <div class="navButton" id="buttonOne">
+                    <a href="../../index.html" class="basicLink">Home</a>
+                </div>
+                <!-- <div class="navButton" id="buttonTwo">
+                    <a href="../topPosts/topPosts.html" class="basicLink">Top Posts</a>
+                </div>
+                <div class="navButton" id="buttonThree">
+                    <a href="../browse/browse.html" class="basicLink">Browse</a>
+                </div> -->
+            </div>
+        </div>
+        <div class="blogSplashBackground"></div>
+        <div class="blogContainer">
+            <div class="blogBody">
+                <div class="blogContent">
+                    <h1 class="blogTitle">
+                        Introduction to the HTML5 Template Element
+                    </h1>
+                    <h2 class="blogSubTitle">
+                        <span class="blogAuthor">
+                            By Jordan Bourne
+                        </span>
+                        <span class="blogDate">
+                            / 2018-07-21
+                        </span>
+                    </h2>
+                    <div class="blogText">
+                        <p>
+                            The &lt;template&gt; element is one of the easiest ways to introduce reuseable components into your page. They sit unrendered in the DOM until called upon, at which point you can reuse it as many times as you'd like and even change the contents of it if desired.
+                        </p>
+                        <h3>The Basics</h3>
+                        <p>
+                            Here we have a small template:
+                        </p>
+                        <pre class="html">
+                            <code>&lt;template id="testTemplate"&gt;</code>
+                            <code>    &lt;div class="testDiv"&gt;</code>
+                            <code>        Hello World</code>
+                            <code>    &lt;/div&gt;</code>
+                            <code>&lt;/template&gt;</code>
+                        </pre>
+                        <p>
+                            To get render it on the page, it just takes a little bit of JavaScript:<br />
+                            (This assumes you have a div somehere on the page with the id: <i>destination</i>)
+                        </p>
+                        <pre class="javascript">
+                            <code>var templateClone = document.getElementById("testTemplate");</code>
+                            <code>var destination = document.getElementById("destination");</code>
+                            <code>destination.appendChild(templateClone.content.cloneNode(true));</code>
+                        </pre>
+                        <p>
+                            Now all you have to do to is tie this to some sort of event, for example an onclick as seen here: (<a href="https://codepen.io/JBourne/pen/RJdMjJ">View in CodePen</a>)
+                            <br />
+                            <button class="templateActionButton" onclick="templatesIntroduction.addExampleTemplate()">Add Template</button>
+                            <button class="templateActionButton" onclick="templatesIntroduction.removeExampleTemplates('destinationOne')">Remove Templates</button>
+                        </p>
+                        <div id="destinationOne">
+                            <span class="destinationHeader">Destination</span>
+                        </div>
+                        <h3>Modifying Content</h3>
+                        <p>
+                            As you find yourself using HTML templates more frequently, the need to have dynamic content is very common. This can be accomplished in a very similar manner to how modification of a standard element would be modified. It's typically easiest to do the modifications before you add the element to the page, unless you want to be dynamically generating an ID or selecting it from an array of like elements.
+                        </p>
+                        <pre class="javascript">
+                            <code>var templateClone = document.getElementById("testTemplate");</code>
+                            <code>var destination = document.getElementById("destination");</code>
+                            <code>var inputText = document.getElementById("exampleTwoText");</code>
+                            <code>templateClone.content.querySelector(".testDiv").textContent = inputText.value;</code>
+                            <code>destination.appendChild(templateClone.content.cloneNode(true));</code>
+                        </pre>
+                        <p>
+                            For this example, just type anything you want to appear into the input box, and then hit the button to add the template: (<a href="https://codepen.io/JBourne/pen/ZRZENp">View in CodePen</a>)
+                            <br />
+                            <input type="text" id="exampleTwoText" />
+                            <br />
+                            <button class="templateActionButton" onclick="templatesIntroduction.addExampleTwoTemplate()">Add Template</button>
+                            <button class="templateActionButton" onclick="templatesIntroduction.removeExampleTemplates('destinationTwo')">Remove Templates</button>
+                        </p>
+                        <div id="destinationTwo">
+                            <span class="destinationHeader">Destination</span>
+                        </div>
+                        <p>
+                            That's all there is to it! The template element is a versatile tool with wide ranging applications. It's unfortunately lacking browser support from Internet Explorer, but all modern browsers support it even going back a number of versions. For the full list of browser support, <a href ="https://caniuse.com/#feat=template">check here</a>.
+                        </p>
+                        <p class="blogFooter">
+                            Comments or questions? Leave a message down below or email me at JordanBourne@ymail.com
+                        </p>
+                    </div>
+                </div>
+                <div class="blogNav">
+                    <a href="../../about/about.html">
+                        <div class="blogAuthor">
+                            <img src="../../images/me.jpg" class="blogAuthorImage" alt="author"/>
+                                <div class="blogAuthorSubTitle">About / Contact</div>
+                            <h3 class="blogAuthorName">JORDAN BOURNE</h3>
+                        </div>
+                    </a>
+                    <div class="recentPosts">Recent Posts</div>
+                    <h3 class="postTitle">
+                        <p>
+                            <a href="../mvp/startingDevelopment.html">
+                                Writing the First Lines of Code (MVP Part 2)
+                            </a>
+                        </p>
+                        <p>
+                            <a href="../mvp/theBeginnings.html">
+                                The Makings of a Minimum Viable Product
+                            </a>
+                        </p>
+                        <p>
+                            <a href="../templates/templatesIntroduction.html">
+                                Introduction to the HTML5 Template Element
+                            </a>
+                        </p>
+                    </h3>
+                </div>
+            </div>
+            <div class="footer">
+                Jordan Bourne
+            </div>
+        </div>
+
+        <template id="testTemplate">
+            <div class="testDiv">
+                Hello World
+            </div>
+        </template>
+
+        <script src="../code.js"></script>
+        <script src="./templatesIntroduction.js"></script>
+	</body>
+</html>
