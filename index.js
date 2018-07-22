@@ -6,7 +6,7 @@ const app = express();
 jbt.init({app});
 
 app.set("view engine", "jbt");
-app.set("views", "./views");
+app.set("views", path.join(__dirname, 'views'));
 
 app.use(express.static(path.join(__dirname, 'views')));
 app.use("/", require("./routes/routes"));
