@@ -14,8 +14,8 @@ describe("Database:: Select::", () => {
     it("Should select into database", (done) => {
         let select = new Select({
             pool: poolMock,
-            selectColumns: ["col1", "col2"],
-            whereData: {
+            columns: ["col1", "col2"],
+            where: {
                 col3: "DATA",
                 col4: "MOREDATA"
             },

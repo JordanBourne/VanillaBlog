@@ -1,10 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const blog = require("../../mocks/blogPosts");
-const recent = require("../../mocks/recentPosts");
-
-router.get("/post/:postTitle", getBlogpost, renderPage);
+router.get("/update/post/:postTitle", getBlogpost, renderPage);
 
 function getBlogpost (req, res, next) {
     for (let i = 0; i < blog.post.length; i++) {

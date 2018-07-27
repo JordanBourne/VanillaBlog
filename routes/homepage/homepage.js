@@ -1,14 +1,11 @@
 const express = require("express");
 const router = express.Router();
 
-const blog = require("../../mocks/blogPosts");
+const getHome = require("../../middleware/homepage/get");
+const render = require("../../middleware/render");
 
-router.get("/", renderPage)
-
-function renderPage (req, res, next) {
-    res.render("index", {
-        blog: blog
-    });
-}
+router.get("/",
+    getHome,
+    render);
 
 module.exports = router;

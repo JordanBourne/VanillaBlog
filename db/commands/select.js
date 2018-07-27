@@ -1,8 +1,8 @@
 class Select {
     constructor(params) {
         this.pool = params.pool;
-        this.selectColumns = params.selectColumns;
-        this.whereData = params.whereData;
+        this.columns = params.columns;
+        this.where = params.where;
         this.table = params.table;
         this.values = [];
         this.valueIndex = 1;
@@ -14,7 +14,7 @@ class Select {
     }
 
     _createSelectionString() {
-        let selectionString = `SELECT ${this.selectColumns.join(", ")}`;
+        let selectionString = `SELECT ${this.columns.join(", ")}`;
         selectionString += ` FROM ${this.table}`
         selectionString += ` WHERE ${this._getWhereClause()}`;
 
@@ -26,11 +26,11 @@ class Select {
         let whereValues = [];
         let whereClause = [];
 
-        for (let column in this.whereData) {
+        for (let column in this.where) {
             whereColumns.push(column);
             whereValues.push(`$${this.valueIndex}`);
             this.valueIndex++;
-            this.values.push(this.whereData[column]);
+            this.values.push(this.where[column]);
         }
 
         for (let i = 0; i < whereColumns.length; i++) {

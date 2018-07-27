@@ -4,7 +4,7 @@ const { expect, assert } = require("chai");
 const poolMock = require("../mocks/pool");
 const DeleteFrom = require("../../db/commands/deleteFrom");
 
-describe.only("Database:: DeleteFrom::", () => {
+describe("Database:: DeleteFrom::", () => {
     let sandbox;
 
     beforeEach(() => {

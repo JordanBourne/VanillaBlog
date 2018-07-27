@@ -1,14 +1,13 @@
 const express = require("express");
 const router = express.Router();
 
-const getAbout = require("../../middleware/blogPost/getAbout");
+const getPost = require("../../middleware/blogPost/getPost");
 const getRecent = require("../../middleware/blogPost/getRecent");
 const render = require("../../middleware/render");
 
-router.get("/about",
-    getAbout,
+router.get("/post/:postLink",
+    getPost,
     getRecent,
-    render
-);
+    render);
 
 module.exports = router;
