@@ -12,6 +12,7 @@ module.exports = function (req, res, next) {
         where: {
             true: true
         },
+        order: "date desc",
         table: "posts"
     }, (err, result) => {
         res.locals.template = "index";

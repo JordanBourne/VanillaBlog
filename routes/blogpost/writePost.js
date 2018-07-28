@@ -1,10 +1,11 @@
 const express = require("express");
 const router = express.Router();
 
-const createPost = require("../../middleware/blogPost/createPost");
+const writePost = require("../../middleware/blogPost/writePost");
 const render = require("../../middleware/render");
 
-router.post("/create/post",
-    createPost);
+router.get("/write/post",
+    writePost,
+    render);
 
 module.exports = router;

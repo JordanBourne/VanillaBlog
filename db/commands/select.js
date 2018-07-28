@@ -4,6 +4,7 @@ class Select {
         this.columns = params.columns;
         this.where = params.where;
         this.table = params.table;
+        this.order = params.order;
         this.values = [];
         this.valueIndex = 1;
         this.selectString = this._createSelectionString();
@@ -17,6 +18,10 @@ class Select {
         let selectionString = `SELECT ${this.columns.join(", ")}`;
         selectionString += ` FROM ${this.table}`
         selectionString += ` WHERE ${this._getWhereClause()}`;
+
+        if (this.order) {
+            selectionString += ` ORDER BY ${this.order}`;
+        }
 
         return selectionString;
     }

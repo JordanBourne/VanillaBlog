@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>Jordan Bourne</title>
+	</head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../index.css">
+    <link rel="stylesheet" type="text/css" href="../navbar.css">
+    <link rel="stylesheet" type="text/css" href="../post/blog.css">
+    <link rel="stylesheet" type="text/css" href="../post/code.css">
+	<body>
+        <div class="navbar">
+            <div class="navName">
+                <a href="/" class="basicLink">Jordan Bourne</a>
+            </div>
+            <div class="navButtons">
+                <div class="navButton" id="buttonOne">
+                    <a href="/" class="basicLink">Home</a>
+                </div>
+            </div>
+        </div>
+        <div class="blogSplashBackground"></div>
+        <div class="blogContainer">
+            <div class="blogBody">
+                <div class="blogContent">
+                    <h1>Create Post</h1>
+                    <p>
+                        Title
+                        <br />
+                        <input id="title" name="title" type="text" />
+                    </p>
+                    <p>
+                        Link
+                        <br />
+                        <input id="link" name="link" type="text" />
+                    </p>
+                    <p>
+                        Body
+                        <br />
+                        <textarea id="body" name="body" rows="20" cols="80"></textarea>
+                    </p>
+                    <button onclick="create.createPost(form)">Submit</button>
+                </div>
+                <div class="blogNav">
+                    <a href="/about">
+                        <div class="blogAuthor">
+                            <img src="../../images/me.jpg" class="blogAuthorImage" alt="author"/>
+                                <div class="blogAuthorSubTitle">About / Contact</div>
+                            <h3 class="blogAuthorName"><| blogPost.author |></h3>
+                        </div>
+                    </a>
+                    <div class="recentPosts">Recent Posts</div>
+                    <h3 class="postTitle">
+                        <p>
+                            <a href="/post/<| recentPosts[0].link |>">
+                                <| recentPosts[0].title |>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="/post/<| recentPosts[1].link |>">
+                                <| recentPosts[1].title |>
+                            </a>
+                        </p>
+                    </h3>
+                </div>
+            </div>
+            <div class="footer">
+                Jordan Bourne
+            </div>
+        </div>
+
+        <| templates[0] |>
+
+        <script src="../httpClient.js"></script>
+        <script src="../post/code.js"></script>
+        <script src="../post/create.js"></script>
+        <script src="../post/templates/templatesIntroduction.js"></script>
+	</body>
+</html>
