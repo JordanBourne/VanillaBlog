@@ -6,7 +6,6 @@ module.exports = function (req, res, next) {
     });
 
     createPost.saveToDatabase((err) => {
-        console.log('## SAVED TO DB');
         if (err) {
             console.log(err);
             return next(err);

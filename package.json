@@ -23,7 +23,7 @@
   "homepage": "https://github.com/JordanBourne/VanillaBlog#readme",
   "dependencies": {
     "express": "^4.16.3",
-    "jbt-express": "^0.1.5",
+    "jbt-express": "^0.1.6",
     "markdown": "^0.5.0",
     "pg": "^7.4.3"
   },
