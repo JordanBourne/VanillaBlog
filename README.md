@@ -10,9 +10,9 @@ Open source blogging platform built with Vanilla JS front end, Nodejs and Expres
 * Pre-made template for homepage and blog posts
 * Interface for PostgreSQL in db/database.js for ease of use
 * Built using TDD to ensure refactorability
+* Ability to create new posts
 
 *Upcoming features*
-* Ability to create new posts
-* Custom Markdown for styling the posts
+* Improve markdown capabilities
 * Authentication for users
 * Add meta tags to posts
