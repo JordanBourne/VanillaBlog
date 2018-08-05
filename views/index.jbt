@@ -71,6 +71,69 @@
                         </div>
                     </a>
                 </div>
+                <div class="blogpost">
+                    <div class="blogTitle">
+                        <h2 class="blogTitleText"><| blog[2].title |></h2>
+                        <h3 class="blogDetails">
+                            <span class="blogAuthor">
+                                By <| blog[2].author |>
+                            </span>
+                            <span class="blogDate">
+                                on <| blog[2].date |>
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="blogPreview">
+                        <| blog[2].preview |>
+                    </div>
+                    <a href="./post/<| blog[2].link |>" class="basicLink">
+                        <div class="blogButton">
+                            Keep Reading
+                        </div>
+                    </a>
+                </div>
+                <div class="blogpost">
+                    <div class="blogTitle">
+                        <h2 class="blogTitleText"><| blog[3].title |></h2>
+                        <h3 class="blogDetails">
+                            <span class="blogAuthor">
+                                By <| blog[3].author |>
+                            </span>
+                            <span class="blogDate">
+                                on <| blog[3].date |>
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="blogPreview">
+                        <| blog[3].preview |>
+                    </div>
+                    <a href="./post/<| blog[3].link |>" class="basicLink">
+                        <div class="blogButton">
+                            Keep Reading
+                        </div>
+                    </a>
+                </div>
+                <div class="blogpost">
+                    <div class="blogTitle">
+                        <h2 class="blogTitleText"><| blog[4].title |></h2>
+                        <h3 class="blogDetails">
+                            <span class="blogAuthor">
+                                By <| blog[4].author |>
+                            </span>
+                            <span class="blogDate">
+                                on <| blog[4].date |>
+                            </span>
+                        </h3>
+                    </div>
+                    <div class="blogPreview">
+                        <| blog[4].preview |>
+                    </div>
+                    <a href="./post/<| blog[4].link |>" class="basicLink">
+                        <div class="blogButton">
+                            Keep Reading
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="footer">
                 <div class="footerTitle">

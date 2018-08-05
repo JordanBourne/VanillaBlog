@@ -56,6 +56,21 @@
                                 <| recentPosts[1].title |>
                             </a>
                         </p>
+                        <p>
+                            <a href="/post/<| recentPosts[2].link |>">
+                                <| recentPosts[2].title |>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="/post/<| recentPosts[3]].link |>">
+                                <| recentPosts[3].title |>
+                            </a>
+                        </p>
+                        <p>
+                            <a href="/post/<| recentPosts[4].link |>">
+                                <| recentPosts[4].title |>
+                            </a>
+                        </p>
                     </h3>
                 </div>
             </div>
